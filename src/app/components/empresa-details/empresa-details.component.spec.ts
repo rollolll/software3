@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { KpasapexComponent } from './kpasapex.component';
+import { EmpresaDetailsComponent } from './empresa-details.component';
 
-describe('KpasapexComponent', () => {
-  let component: KpasapexComponent;
-  let fixture: ComponentFixture<KpasapexComponent>;
+describe('EmpresaDetailsComponent', () => {
+  let component: EmpresaDetailsComponent;
+  let fixture: ComponentFixture<EmpresaDetailsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ KpasapexComponent ]
+      declarations: [ EmpresaDetailsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(KpasapexComponent);
+    fixture = TestBed.createComponent(EmpresaDetailsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

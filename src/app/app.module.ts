@@ -1,16 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { KpasapexComponent } from './kpasapex/kpasapex.component';
-import { CrudComponent } from './crud/crud.component';
+import { AddEmpresaComponent } from './components/add-empresa/add-empresa.component';
+import { EmpresaDetailsComponent } from './components/empresa-details/empresa-details.component';
+import { EmpresaListComponent } from './components/empresa-list/empresa-list.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    KpasapexComponent,
-    CrudComponent
+    AddEmpresaComponent,
+    EmpresaDetailsComponent,
+    EmpresaListComponent,
+    FormsModule,
+    HttpClientModule
   ],
   imports: [
     BrowserModule,

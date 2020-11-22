@@ -298,6 +298,24 @@
   }
 </style>
 
+<div>
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <a href="#" class="navbar-brand">Jorge</a>
+    <div class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a routerLink="empresa" class="nav-link">Empresas</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="add" class="nav-link">Add</a>
+      </li>
+    </div>
+  </nav>
+
+  <div class="container mt-3">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
   <img
