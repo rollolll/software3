@@ -1,20 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { EmpresaListComponent } from './components/empresa-list/empresa-list.component';
-import { EmpresaDetailsComponent } from './components/empresa-details/empresa-details.component';
-import { AddEmpresaComponent } from './components/add-empresa/add-empresa.component';
-
-
+import { ListEmpresasComponent } from './components/list-empresas/list-empresas.component';
+import { DetailsEmpresasComponent } from './components/details-empresas/details-empresas.component';
+import { AddEmpresasComponent } from './components/add-empresas/add-empresas.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'empresa', pathMatch: 'full' },
-  { path: 'empresa', component: EmpresaListComponent },
-  { path: 'empresa/:id', component: EmpresaDetailsComponent },
-  { path: 'add', component: AddEmpresaComponent }
+  { path: 'empresa', component: ListEmpresasComponent },
+  { path: 'empresa/:id', component: DetailsEmpresasComponent },
+  { path: 'add', component: AddEmpresasComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
