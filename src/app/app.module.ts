@@ -17,8 +17,9 @@ import {MatToolbarModule } from '@angular/material/toolbar';
 import {MatInputModule} from '@angular/material/input';
 import {MatTableModule} from '@angular/material/table';
 import {MatCardModule} from '@angular/material/card';
-
+import {MatSnackBarModule, SimpleSnackBar} from '@angular/material/snack-bar';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -46,7 +47,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatIconModule,
     MatExpansionModule,
     HttpClientModule,
-    MatSliderModule
+    MatSliderModule,
+    NgbModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

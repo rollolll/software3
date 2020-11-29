@@ -30,16 +30,20 @@ export class AddEmpresasComponent implements OnInit {
 
   
   recuperarTodos() {
-    this.articulosServicio.recuperarTodos().subscribe(result => this.empresa = result);
+    this.articulosServicio.recuperarTodos().subscribe(data=> this.empresa = data);
     
   }
 
   alta() {
     this.articulosServicio.alta(this.art).subscribe(datos => {
    
-        this.recuperarTodos();
+      if(datos){
       
+        this.recuperarTodos();
+      }
     });
+      
+  
   }
 
   baja(Nit:number) {
