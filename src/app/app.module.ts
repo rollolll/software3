@@ -22,12 +22,14 @@ import {MatExpansionModule} from '@angular/material/expansion';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     AddEmpresasComponent,
     ListEmpresasComponent,
-    DetailsEmpresasComponent
+    DetailsEmpresasComponent,
+ 
   ],
   imports: [
     BrowserModule,
