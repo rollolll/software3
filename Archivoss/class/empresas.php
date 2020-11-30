@@ -25,7 +25,7 @@ class Empresa
     // GET ALL
     public function getEmpresas()
     {
-        $sqlQuery = "SELECT Nit, Nombre_emp, Telefono, Direccion, Ciudad FROM " . $this->db_table . "";
+        $sqlQuery = "SELECT Nit,Nombre_emp, Telefono, Direccion, Ciudad FROM " . $this->db_table . "";
         $stmt = $this->conn->prepare($sqlQuery);
         $stmt->execute();
         return $stmt;

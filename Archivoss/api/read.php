@@ -14,13 +14,13 @@ $stmt = $items->getEmpresas();
 $itemCount = $stmt->rowCount();
 
 
-echo json_encode($itemCount);
+
 
 if ($itemCount > 0) {
-
-    $EmpresaArr = array();
-    $EmpresaArr["body"] = array();
     $EmpresaArr["itemCount"] = $itemCount;
+
+    $EmpresaArr = [];
+
 
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
         extract($row);
@@ -33,7 +33,7 @@ if ($itemCount > 0) {
 
         );
 
-        array_push($EmpresaArr["body"], $e);
+        array_push($EmpresaArr, $e);
     }
     echo json_encode($EmpresaArr);
 } else {
