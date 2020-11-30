@@ -1,35 +1,6 @@
 <body>
-  <div id="contenedor">
 
 
-
-    <mat-form-field>
-      <input type="text" class="example-full-width" [(ngModel)]="art.Nombre_emp" extarea matInput
-        placeholder="Nombre empresa" required>
-    </mat-form-field>
-
-    <mat-form-field>
-      <input type="number" class="example-full-width" [(ngModel)]="art.Telefono" extarea matInput placeholder="Telefono"
-        required>
-
-    </mat-form-field>
-
-    <mat-form-field>
-      <input type="adress" class="example-full-width" [(ngModel)]="art.Direccion" extarea matInput
-        placeholder="Direccion" required>
-
-    </mat-form-field>
-
-    <mat-form-field>
-      <input type="text" class="example-full-width" [(ngModel)]="art.Ciudad" extarea matInput placeholder="Ciudad">
-
-    </mat-form-field>
-
-
-    <br>
-    <button mat-raised-button color="primary" (click)="alta()">Crear Empresa</button>
-  </div>
-  ////////////////////////////////////////
   <div id="contenedor">
 
     <form (ngSubmit)="alta()">
@@ -82,12 +53,12 @@
 
     </form>
   </div>
-  //////////////////////////////////////////
+
 
   <table class="table table-striped">
     <thead>
       <tr>
-        <th scope="col">#</th>
+
         <th scope="col">Nombre_emp</th>
         <th scope="col">Telefono</th>
         <th scope="col">Direccion</th>
@@ -99,7 +70,7 @@
 
 
 
-        <td>{{art.Nit}}</td>
+
         <td>{{art.Nombre_emp}}</td>
         <td>{{art.Telefono}}</td>
         <td>{{art.Direccion}}</td>
