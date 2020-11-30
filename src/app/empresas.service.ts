@@ -29,4 +29,7 @@ export class EmpresasService {
 consulta(empresa:any){
   return this.http.post(`${this.url}modificacion2.php`, JSON.stringify(empresa));
 }
+recuperarLogin() {
+  return this.http.get(`${this.url}login.php`);
+}
 }

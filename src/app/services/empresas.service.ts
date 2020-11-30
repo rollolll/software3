@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { empresa } from '../modelo/modelo.component';
 import { HttpClient } from '@angular/common/http';
+
+
 @Injectable({
   providedIn: 'root'
 })
@@ -26,7 +28,7 @@ export class EmpresasService {
       return this.http.delete(`${this.API_URI}/cuentas/${id_cuenta}`);
     }
   
-    saveCuenta(Cuentas: Cuenta){
+    /*saveCuenta(Cuentas: Cuenta){
     return this.http.post(`${this.API_URI}/cuentas`, Cuentas);
     }
   
@@ -34,7 +36,7 @@ export class EmpresasService {
       return this.http.put(`${this.API_URI}/cuentas/${id}`, updatecuenta);
   
     }
-
+*/
     recuperarLogin() {
       return this.http.get(`${this.url}login.php`);
     }
