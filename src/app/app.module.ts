@@ -20,6 +20,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatSnackBarModule, SimpleSnackBar} from '@angular/material/snack-bar';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { LoginComponent } from './components/login/login.component';
 
 
 
@@ -30,6 +31,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AddEmpresasComponent,
     ListEmpresasComponent,
     DetailsEmpresasComponent,
+    LoginComponent
  
   ],
   imports: [

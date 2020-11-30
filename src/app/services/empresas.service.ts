@@ -9,6 +9,8 @@ export class EmpresasService {
 
 
     API_URI = 'http://localhost:3000';
+
+    url='http://localhost/Archivoss/api/';
   
     constructor(private http: HttpClient) { }
   
@@ -32,5 +34,11 @@ export class EmpresasService {
       return this.http.put(`${this.API_URI}/cuentas/${id}`, updatecuenta);
   
     }
+
+    recuperarLogin() {
+      return this.http.get(`${this.url}login.php`);
+    }
+
+
   }
   
